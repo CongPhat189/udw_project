@@ -1,0 +1,141 @@
+/* Trang Liên hệ – tông vàng cổ kính đồng bộ */
+
+.contact-hero {
+  padding: 110px 20px 24px; /* chừa chỗ header fixed */
+  text-align: center;
+  background: #fdf5d4;
+}
+.contact-hero h2 {
+  color: #d4a017;
+  margin-bottom: 6px;
+}
+.contact-hero p {
+  color: #3b2a0a;
+}
+
+/* Info + Map */
+.contact-info {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+  padding: 18px 20px 28px;
+  background: #f9f5e7;
+}
+.info-card, .map-card {
+  background: #fff8df;
+  border-radius: 12px;
+  padding: 16px 18px;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.12);
+}
+.info-card h3, .map-card h3 { color: #5c3b09; margin-bottom: 10px; }
+.info-card ul { list-style: none; padding-left: 0; }
+.info-card li { margin: 6px 0; color: #3b2a0a; }
+
+.map-wrapper {
+  position: relative;
+  width: 100%;
+  padding-bottom: 56.25%; /* 16:9 */
+  height: 0;
+  overflow: hidden;
+  border-radius: 8px;
+}
+.map-wrapper iframe {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+/* Form liên hệ */
+.contact-form {
+  background: #fdf5d4;
+  padding: 24px 20px 36px;
+  text-align: center;
+}
+.contact-form h3 { color: #d4a017; margin-bottom: 12px; }
+#formContact {
+  max-width: 720px;
+  margin: 0 auto;
+  text-align: left;
+  background: #fff8df;
+  border-radius: 12px;
+  padding: 16px 18px;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.12);
+}
+.row { display: flex; flex-direction: column; margin-bottom: 12px; }
+label { color: #5c3b09; margin-bottom: 6px; }
+input, textarea {
+  border: 1px solid #e6d6a8;
+  border-radius: 8px;
+  padding: 10px 12px;
+  font-size: 14px;
+  outline: none;
+}
+input:focus, textarea:focus { border-color: #d4a017; }
+
+.btn-send {
+  background: #d4a017;
+  color: #fff;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.btn-send:hover { filter: brightness(0.95); }
+
+.form-note { margin-top: 8px; color: #3b2a0a; }
+.form-note.error { color: #b00020; }
+
+/* Liên kết nhanh */
+.quick-links {
+  background: #f9f5e7;
+  padding: 22px 20px 30px;
+  text-align: center;
+}
+.quick-links h3 { color: #5c3b09; margin-bottom: 10px; }
+.link-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 12px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+.qbtn {
+  display: inline-block;
+  background: #fff8df;
+  color: #5c3b09;
+  text-decoration: none;
+  padding: 12px 14px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+  transition: transform .15s ease, box-shadow .15s ease, background .15s ease;
+}
+.qbtn:hover {
+  transform: translateY(-2px);
+  background: #f7e7b8;
+}
+
+/* Bài viết */
+.articles {
+  background: #fdf5d4;
+  padding: 22px 20px 40px;
+}
+.articles h3 { color: #5c3b09; margin-bottom: 10px; text-align: center; }
+.article-list {
+  max-width: 900px;
+  margin: 0 auto;
+  list-style: none;
+  padding-left: 0;
+}
+.article-list li { padding: 8px 0; }
+.article-list a {
+  color: #964b00;
+  text-decoration: none;
+}
+.article-list a:hover { text-decoration: underline; }
+
+/* Responsive */
+@media (max-width: 900px) {
+  .contact-info { grid-template-columns: 1fr; }
+}

@@ -1,0 +1,162 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Header */
+header {
+    background: rgba(70, 50, 20, 0.85); /* Nâu trầm */
+    color: #fdf5d4; /* Vàng nhạt */
+    padding: 15px 20px;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 50;
+}
+
+header h1 {
+    margin-bottom: 8px;
+    letter-spacing: 1px;
+}
+
+header nav a {
+    color: #fdf5d4;
+    margin: 0 12px;
+    text-decoration: none;
+}
+
+header nav a.active {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+/* Hero */
+.hero {
+    background: url('images/danang-bg.jpg') no-repeat center/cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 90px; /* chừa chỗ cho header */
+}
+
+.intro-box {
+    background: rgba(253, 245, 212, 0.95); /* Vàng nhạt */
+    padding: 30px 28px;
+    max-width: 720px;
+    border-radius: 14px;
+    text-align: center;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.28);
+}
+
+.intro-box h2 {
+    color: #d4a017; /* Vàng ấm */
+    margin-bottom: 12px;
+}
+
+.intro-box p {
+    line-height: 1.6;
+    color: #3b2a0a;
+}
+
+/* Gallery Section */
+.gallery {
+    padding: 56px 20px 64px;
+    background: #f9f5e7; /* Vàng kem */
+    text-align: center;
+}
+
+.gallery h2 {
+    margin-bottom: 20px;
+    color: #d4a017; /* Vàng ấm */
+    letter-spacing: 0.3px;
+}
+
+/* Carousel */
+.carousel {
+    position: relative;
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.carousel-viewport {
+    overflow: hidden;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.carousel-track {
+    display: flex;
+    transition: transform 0.45s ease;
+    will-change: transform;
+}
+
+.slide {
+    flex: 0 0 100%;
+    text-align: center;
+    background: #fff8df; /* nền nhẹ dưới ảnh để đồng bộ tông */
+}
+
+.slide img {
+    width: 100%;
+    height: 420px;
+    object-fit: cover;
+    display: block;
+}
+
+/* Caption dưới ảnh (không đè lên ảnh) */
+.caption {
+    color: #5c3b09; /* Nâu đậm */
+    font-weight: 600;
+    padding: 12px 10px 16px;
+    font-size: 16px;
+}
+
+/* Nút điều hướng */
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(253,245,212,0.9); /* Vàng nhạt */
+    border: none;
+    font-size: 30px;
+    cursor: pointer;
+    padding: 10px 14px;
+    border-radius: 50%;
+    color: #5c3b09; /* Nâu đậm */
+    z-index: 2;
+    transition: background 0.2s ease, color 0.2s ease, transform 0.15s ease;
+    user-select: none;
+}
+
+.prev:hover, .next:hover {
+    background: #d4a017; /* Vàng ấm */
+    color: #fff;
+}
+
+.prev:active, .next:active {
+    transform: translateY(-50%) scale(0.96);
+}
+
+.prev { left: -6px; }
+.next { right: -6px; }
+
+/* Footer */
+footer {
+    background: #5c3b09; /* Nâu đậm */
+    color: #fdf5d4; /* Vàng nhạt */
+    text-align: center;
+    padding: 16px 0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .intro-box { margin: 0 16px; padding: 24px; }
+    .slide img { height: 280px; }
+    .prev, .next { font-size: 26px; padding: 8px 12px; }
+    .prev { left: 4px; }
+    .next { right: 4px; }
+}

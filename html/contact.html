@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <title>Liên hệ - Đà Nẵng</title>
+  <link rel="stylesheet" href="/css/home.css" />
+  <link rel="stylesheet" href="/css/contact.css" />
+</head>
+<body>
+
+<header>
+  <h1>Liên Hệ</h1>
+  <nav>
+    <a href="index.html">Trang chủ</a>
+    <a href="amthuc.html">Ẩm thực</a>
+    <a href="qua.html">Quà lưu niệm</a>
+    <a href="diadiem.html">Địa điểm</a>
+    <a href="contact.html" class="active">Liên hệ</a>
+  </nav>
+</header>
+
+
+<section class="contact-hero">
+  <h2>Kết nối với chúng tôi</h2>
+  <p>Hỗ trợ thông tin du lịch, gợi ý lịch trình và đặc sản Đà Nẵng.</p>
+</section>
+
+<!-- Thông tin & Bản đồ -->
+<section class="contact-info">
+  <div class="info-card">
+    <h3>Thông tin liên hệ</h3>
+    <ul>
+      <li><strong>Email:</strong> info@danang.travel</li>
+      <li><strong>Điện thoại:</strong> 0123 456 789</li>
+      <li><strong>Địa chỉ:</strong> 24 Trần Phú, Hải Châu, Đà Nẵng</li>
+      <li><strong>Giờ hỗ trợ:</strong> 08:00 – 21:00 (hàng ngày)</li>
+    </ul>
+  </div>
+
+  <div class="map-card">
+    <h3>Bản đồ</h3>
+    <div class="map-wrapper">
+      
+      <iframe
+        src="https://www.google.com/maps?q=Danang&output=embed"
+        loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </div>
+  </div>
+</section>
+
+<!-- Form liên hệ -->
+<section class="contact-form">
+  <h3>Gửi lời nhắn</h3>
+  <form id="formContact" onsubmit="return false;">
+    <div class="row">
+      <label for="name">Họ và tên</label>
+      <input id="name" name="name" type="text" placeholder="Nguyễn Văn A" required />
+    </div>
+    <div class="row">
+      <label for="email">Email</label>
+      <input id="email" name="email" type="email" placeholder="ban@vidu.com" required />
+    </div>
+    <div class="row">
+      <label for="message">Nội dung</label>
+      <textarea id="message" name="message" rows="5" placeholder="Bạn muốn hỏi gì về Đà Nẵng?"></textarea>
+    </div>
+    <button class="btn-send" id="btnSend">Gửi</button>
+    <p class="form-note" id="formNote"></p>
+  </form>
+</section>
+
+<!-- Liên kết nhanh -->
+<section class="quick-links">
+  <h3>Liên kết nhanh</h3>
+  <div class="link-grid">
+    
+    <a class="qbtn" href="https://www.vietnamairlines.com/" target="_blank" rel="noopener">Vé máy bay (VNA)</a>
+    <a class="qbtn" href="https://www.booking.com/city/vn/da-nang.vi.html" target="_blank" rel="noopener">Đặt khách sạn (Booking)</a>
+    <a class="qbtn" href="https://www.agoda.com/vi-vn/city/da-nang-vn.html" target="_blank" rel="noopener">Đặt khách sạn (Agoda)</a>
+  </div>
+</section>
+
+<!-- Bài viết tham khảo -->
+<section class="articles">
+  <h3>Bài viết về Đà Nẵng</h3>
+  <ul class="article-list">
+    <li>
+      <a href="https://danangfantasticity.com/" target="_blank" rel="noopener">
+        Cẩm nang du lịch Đà Nẵng (Fantasticity)
+      </a>
+    </li>
+    <li>
+      <a href="https://www.klook.com/vi/blog/du-lich-da-nang/" target="_blank" rel="noopener">
+        Kinh nghiệm du lịch Đà Nẵng tự túc (Klook Blog)
+      </a>
+    </li>
+    <li>
+      <a href="https://vinwonders.com/vi/bai-viet-du-lich/du-lich-da-nang/" target="_blank" rel="noopener">
+        Gợi ý địa điểm vui chơi & ăn uống ở Đà Nẵng
+      </a>
+    </li>
+  </ul>
+</section>
+
+<footer>
+  <p>&copy; 2025 Đặc sản & Du lịch Đà Nẵng</p>
+</footer>
+
+
+<script>
+  document.getElementById('btnSend').addEventListener('click', function() {
+    const name = document.getElementById('name').value.trim();
+    const email = document.getElementById('email').value.trim();
+    if (!name || !email) {
+      document.getElementById('formNote').textContent = 'Vui lòng điền tên và email.';
+      document.getElementById('formNote').classList.add('error');
+      return;
+    }
+    document.getElementById('formNote').classList.remove('error');
+    document.getElementById('formNote').textContent = 'Cảm ơn bạn! Lời nhắn đã được ghi nhận.';
+    document.getElementById('formContact').reset();
+  });
+</script>
+
+</body>
+</html>
