@@ -5,7 +5,7 @@
     font-family: Arial, sans-serif;
 }
 
-/* Header */
+
 header {
     background: rgba(70, 50, 20, 0.85); /* Nâu trầm */
     color: #fdf5d4; /* Vàng nhạt */
@@ -33,7 +33,7 @@ header nav a.active {
     text-decoration: underline;
 }
 
-/* Hero */
+
 .hero {
     background: url('images/danang-bg.jpg') no-repeat center/cover;
     height: 100vh;
@@ -62,7 +62,7 @@ header nav a.active {
     color: #3b2a0a;
 }
 
-/* Gallery Section */
+
 .gallery {
     padding: 56px 20px 64px;
     background: #f9f5e7; /* Vàng kem */
@@ -75,7 +75,7 @@ header nav a.active {
     letter-spacing: 0.3px;
 }
 
-/* Carousel */
+
 .carousel {
     position: relative;
     max-width: 960px;
@@ -107,7 +107,6 @@ header nav a.active {
     display: block;
 }
 
-/* Caption dưới ảnh (không đè lên ảnh) */
 .caption {
     color: #5c3b09; /* Nâu đậm */
     font-weight: 600;
@@ -152,7 +151,7 @@ footer {
     padding: 16px 0;
 }
 
-/* Responsive */
+
 @media (max-width: 768px) {
     .intro-box { margin: 0 16px; padding: 24px; }
     .slide img { height: 280px; }

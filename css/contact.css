@@ -1,7 +1,7 @@
-/* Trang Liên hệ – tông vàng cổ kính đồng bộ */
+
 
 .contact-hero {
-  padding: 110px 20px 24px; /* chừa chỗ header fixed */
+  padding: 110px 20px 24px; 
   text-align: center;
   background: #fdf5d4;
 }
@@ -135,7 +135,7 @@ input:focus, textarea:focus { border-color: #d4a017; }
 }
 .article-list a:hover { text-decoration: underline; }
 
-/* Responsive */
+
 @media (max-width: 900px) {
   .contact-info { grid-template-columns: 1fr; }
 }
