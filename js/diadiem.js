@@ -1,7 +1,7 @@
 const PLACES = {
   "banh-xeo-ba-duong": {
     name: "Bánh xèo Bà Dưỡng",
-    image: "images/banh-xeo-ba-duong.jpg",
+    image: "/images/banh-xeo-ba-duong.jpg",
     desc:
       "Quán bánh xèo lâu đời nổi tiếng, vỏ giòn rụm; ăn kèm rau sống và mắm nêm đúng điệu.",
     highlights: [
@@ -17,7 +17,7 @@ const PLACES = {
   },
   "mi-quang-ba-mua": {
     name: "Mì Quảng Bà Mua",
-    image: "images/mi-quang-ba-mua.jpg",
+    image: "/images/mi-quang-ba-mua.jpg",
     desc:
       "Chuỗi quán mì Quảng nổi tiếng với nhiều topping, nước lèo đậm vị, phục vụ nhanh.",
     highlights: [
@@ -33,7 +33,7 @@ const PLACES = {
   },
   "bun-cha-ca-hon": {
     name: "Bún chả cá Hờn",
-    image: "images/bun-cha-ca-hon.jpg",
+    image: "/images/bun-cha-ca-hon.jpg",
     desc:
       "Nước dùng ngọt thanh từ xương cá và rau củ, chả cá dai ngon chuẩn vị miền Trung.",
     highlights: [
@@ -49,7 +49,7 @@ const PLACES = {
   },
   "banh-trang-thit-heo-mau": {
     name: "Bánh tráng thịt heo Mậu",
-    image: "images/banh-trang-thit-heo-mau.jpg",
+    image: "/images/banh-trang-thit-heo-mau.jpg",
     desc:
       "Thịt heo hai đầu da thái mỏng, bánh tráng dẻo dai; chấm mắm nêm đặc trưng Đà Nẵng.",
     highlights: [
@@ -65,7 +65,7 @@ const PLACES = {
   },
   "banh-xeo-76": {
     name: "Bánh Xèo 76 (Đà Nẵng)",
-    image: "images/banh-xeo-76.jpg",
+    image: "/images/banh-xeo-76.jpg",
     desc:
       "Bánh Xèo 76 có bếp nướng than ngay lối vào để nướng thịt heo. Phục vụ các món truyền thống như bánh xèo, chả giò bắp, bún thịt nướng.",
     highlights: [
@@ -81,7 +81,7 @@ const PLACES = {
   },
   "madame-lan": {
     name: "Nhà hàng Madame Lân",
-    image: "images/madame-lan.jpg",
+    image: "/images/madame-lan.jpg",
     desc:
       "Nhà hàng Madame Lân tái hiện không gian phố cổ với ẩm thực miền Trung đặc sắc. Thực đơn đa dạng từ mì Quảng, bánh bèo, nem lụi đến hải sản tươi.",
     highlights: [

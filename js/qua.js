@@ -1,7 +1,7 @@
 const GIFTS = {
   "cha-bo": {
     name: "Chả bò Đà Nẵng",
-    image: "images/cha-bo.jpg",
+    image: "/images/cha-bo.jpg",
     desc:
       "Chả bò Đà Nẵng dai ngon, thơm mùi tiêu. Phù hợp làm quà cho gia đình và bạn bè.",
     highlights: [
@@ -17,7 +17,7 @@ const GIFTS = {
   },
   "me-xung": {
     name: "Mè xửng",
-    image: "images/me-xung.jpg",
+    image: "/images/me-xung.jpg",
     desc:
       "Kẹo mè xửng dẻo ngọt, phủ mè rang thơm bùi, đóng gói gọn gàng — món quà đậm chất miền Trung.",
     highlights: [
@@ -33,7 +33,7 @@ const GIFTS = {
   },
   "mut-khoai": {
     name: "Mứt khoai lang",
-    image: "images/mut-khoai.jpg",
+    image: "/images/mut-khoai.jpg",
     desc:
       "Mứt khoai lang mềm dẻo, vị ngọt vừa, là món quà giản dị nhưng rất được ưa thích.",
     highlights: [
@@ -49,7 +49,7 @@ const GIFTS = {
   },
   "rong-bien": {
     name: "Rong biển khô",
-    image: "images/rong-bien.jpg",
+    image: "/images/rong-bien.jpg",
     desc:
       "Rong biển khô giàu dinh dưỡng, có thể nấu canh, làm salad, hoặc ăn vặt.",
     highlights: [
@@ -65,7 +65,7 @@ const GIFTS = {
   },
   "nuoc-mam": {
     name: "Nước mắm Nam Ô",
-    image: "images/nuoc-mam.jpg",
+    image: "/images/nuoc-mam.jpg",
     desc:
       "Nước mắm Nam Ô nổi tiếng với hương vị đậm đà, làm từ cá cơm tươi và muối hạt.",
     highlights: [

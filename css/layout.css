@@ -8,20 +8,20 @@
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.6;
-    color: #333;
-    background-color: #f8f9fa;
+    color: #4d3b27;
+    background-color: #fdf6e3;
 }
 
 /* Header Styles */
 header {
-    background: linear-gradient(135deg, #0077b6 0%, #023e8a 100%);
+    background: linear-gradient(135deg, #a87c4f 0%, #7a5c38 100%);
     color: white;
     padding: 15px 0;
     position: fixed;
     top: 0;
     width: 100%;
     z-index: 1000;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: none;
     backdrop-filter: blur(10px);
 }
 
@@ -39,7 +39,7 @@ header h1 {
     font-weight: 700;
     letter-spacing: 1px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-    background: linear-gradient(45deg, #90e0ef, #caf0f8);
+    background: linear-gradient(45deg, #f2c57c, #f6e27f);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -56,11 +56,12 @@ header h1 {
     color: white;
     text-decoration: none;
     font-weight: 500;
-    padding: 8px 16px;
+    padding: 10px 20px;
     border-radius: 25px;
-    transition: all 0.3s ease;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
     position: relative;
     overflow: hidden;
+    display: inline-block;
 }
 
 .nav-menu li a::before {
@@ -70,8 +71,14 @@ header h1 {
     left: -100%;
     width: 100%;
     height: 100%;
-    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
-    transition: left 0.5s;
+    background: linear-gradient(
+        90deg,
+        transparent,
+        rgba(255, 255, 255, 0.2),
+        transparent
+    );
+    transition: left 0.6s ease;
+    z-index: 1;
 }
 
 .nav-menu li a:hover::before {
@@ -80,15 +87,17 @@ header h1 {
 
 .nav-menu li a:hover {
     background-color: rgba(255, 255, 255, 0.1);
-    color: #90e0ef;
+    color: #f6e27f;
     transform: translateY(-2px);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
 }
 
 .nav-menu li a.active {
-    background-color: #90e0ef;
-    color: #023e8a;
+    background-color: #f6e27f;
+    color: #5e4328;
     font-weight: 600;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    transform: translateY(-1px);
 }
 
 /* Mobile Menu Button */
@@ -107,7 +116,7 @@ body {
     padding-top: 80px;
 }
 
-/* Hero Section Enhancement */
+/* Hero Section */
 .hero {
     background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
         url('/images/danang-bg.jpg') no-repeat center/cover;
@@ -125,11 +134,11 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-    background: linear-gradient(45deg, rgba(0, 119, 182, 0.1), rgba(2, 62, 138, 0.1));
+    background: linear-gradient(45deg, rgba(168, 124, 79, 0.2), rgba(122, 92, 56, 0.2));
 }
 
 .intro-box {
-    background: rgba(255, 255, 255, 0.95);
+    background: rgba(255, 248, 220, 0.95);
     padding: 40px;
     max-width: 800px;
     border-radius: 20px;
@@ -155,7 +164,7 @@ body {
 }
 
 .intro-box h2 {
-    color: #023e8a;
+    color: #7a5c38;
     margin-bottom: 20px;
     font-size: 32px;
     font-weight: 700;
@@ -163,13 +172,13 @@ body {
 
 .intro-box p {
     line-height: 1.8;
-    color: #495057;
+    color: #4d3b27;
     font-size: 16px;
 }
 
 /* Footer Styles */
 footer {
-    background: linear-gradient(135deg, #023e8a 0%, #001233 100%);
+    background: linear-gradient(135deg, #7a5c38 0%, #3e2f20 100%);
     color: white;
     text-align: center;
     padding: 40px 20px 20px;
@@ -185,15 +194,13 @@ footer::before {
     left: 0;
     right: 0;
     height: 4px;
-    background: linear-gradient(90deg, #0077b6, #90e0ef, #caf0f8, #90e0ef, #0077b6);
+    background: linear-gradient(90deg, #d4af37, #f2c57c, #f6e27f, #f2c57c, #d4af37);
     background-size: 200% 100%;
     animation: shimmer 3s ease-in-out infinite;
 }
 
 @keyframes shimmer {
-
-    0%,
-    100% {
+    0%, 100% {
         background-position: 200% 0;
     }
 
@@ -223,7 +230,7 @@ footer p {
 }
 
 .footer-links a {
-    color: #90e0ef;
+    color: #f6e27f;
     text-decoration: none;
     font-weight: 500;
     transition: all 0.3s ease;
@@ -256,19 +263,19 @@ footer p {
 }
 
 .social-icon:hover {
-    background-color: #0077b6;
+    background-color: #d4af37;
     transform: translateY(-3px) scale(1.1);
-    box-shadow: 0 5px 15px rgba(0, 119, 182, 0.4);
+    box-shadow: 0 5px 15px rgba(212, 175, 55, 0.4);
 }
 
-/* Gallery Section Enhancement */
+/* Gallery */
 .gallery {
     padding: 80px 20px;
-    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    background: linear-gradient(135deg, #fdf6e3 0%, #f5f0dc 100%);
 }
 
 .gallery h2 {
-    color: #023e8a;
+    color: #7a5c38;
     font-size: 36px;
     font-weight: 700;
     margin-bottom: 40px;
@@ -284,11 +291,11 @@ footer p {
     transform: translateX(-50%);
     width: 100px;
     height: 4px;
-    background: linear-gradient(90deg, #0077b6, #90e0ef);
+    background: linear-gradient(90deg, #d4af37, #f2c57c);
     border-radius: 2px;
 }
 
-/* Responsive Design */
+/* Responsive */
 @media (max-width: 768px) {
     .mobile-menu-btn {
         display: block;
@@ -299,11 +306,15 @@ footer p {
         top: 100%;
         left: 0;
         width: 100%;
-        background: linear-gradient(135deg, #54781b 0%, #023e8a 100%);
+        background: linear-gradient(135deg, #a87c4f 0%, #7a5c38 100%);
         flex-direction: column;
-        gap: 0;
         display: none;
-        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+        padding: 10px 0;
+        gap: 0;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+        z-index: 1000;
+        border-radius: 0 0 8px 8px;
+        animation: slideDown 0.3s ease forwards;
     }
 
     .nav-menu.active {

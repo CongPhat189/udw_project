@@ -117,23 +117,34 @@ input:focus, textarea:focus { border-color: #d4a017; }
 }
 
 /* Bài viết */
-.articles {
-  background: #fdf5d4;
-  padding: 22px 20px 40px;
+.article-container {
+  display: flex;
+  justify-content: center;
 }
-.articles h3 { color: #5c3b09; margin-bottom: 10px; text-align: center; }
+
 .article-list {
-  max-width: 900px;
-  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(2, auto); /* auto giúp lưới gọn gàng */
+  gap: 1.5rem 4rem; /* khoảng cách dòng & giữa cột */
+  padding: 0;
   list-style: none;
-  padding-left: 0;
 }
-.article-list li { padding: 8px 0; }
-.article-list a {
-  color: #964b00;
+
+
+.article-list li a {
+  display: block;
+  color: #8B4513; 
   text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
 }
-.article-list a:hover { text-decoration: underline; }
+
+.article-list li a:hover {
+  color: #C19A6B;
+  text-decoration: underline;
+}
+
+.articles h3 { color: #5c3b09; margin-bottom: 10px; text-align: center; }
 
 
 @media (max-width: 900px) {
