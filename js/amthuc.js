@@ -1,8 +1,7 @@
-// Dữ liệu món ăn 
 const DISHES = {
   "mi-quang": {
     name: "Mì Quảng",
-    image: "images/mi-quang.jpg",
+    image: "/images/mi-quang.jpg",
     desc:
       "Mì Quảng – biểu tượng ẩm thực miền Trung, sợi mì vàng óng, nước dùng đậm đà; ăn kèm rau sống, đậu phộng, bánh tráng mè.",
     highlights: [
@@ -18,7 +17,7 @@ const DISHES = {
   },
   "banh-trang-thit-heo": {
     name: "Bánh tráng cuốn thịt heo",
-    image: "images/banh-trang-thit-heo.jpg",
+    image: "/images/banh-trang-thit-heo.jpg",
     desc:
       "Thịt heo hai đầu da thái mỏng, cuốn cùng bánh tráng dẻo, rau sống phong phú; chấm mắm nêm đậm đà.",
     highlights: [
@@ -34,7 +33,7 @@ const DISHES = {
   },
   "bun-cha-ca": {
     name: "Bún chả cá",
-    image: "images/bun-cha-ca.jpg",
+    image: "/images/bun-cha-ca.jpg",
     desc:
       "Nước dùng ngọt thanh từ xương cá và rau củ, chả cá dai ngon; ăn kèm rau sống và ớt xanh.",
     highlights: [
@@ -50,7 +49,7 @@ const DISHES = {
   },
   "banh-xeo": {
     name: "Bánh xèo",
-    image: "images/banh-xeo.jpg",
+    image: "/images/banh-xeo.jpg",
     desc:
       "Vỏ bánh vàng giòn, nhân tôm thịt đầy đặn; ăn kèm rau sống và chấm mắm nêm hoặc nước mắm chua ngọt.",
     highlights: [
@@ -66,7 +65,7 @@ const DISHES = {
   },
   "banh-kho-me": {
     name: "Bánh khô mè",
-    image: "images/banh-kho-me.jpg",
+    image: "/images/banh-kho-me.jpg",
     desc:
       "Đặc sản Cẩm Lệ: thơm bùi mè rang, giòn tan, ít ngọt; rất hợp làm quà biếu.",
     highlights: [

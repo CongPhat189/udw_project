@@ -1,4 +1,3 @@
-// Dữ liệu quà lưu niệm
 const GIFTS = {
   "cha-bo": {
     name: "Chả bò Đà Nẵng",

@@ -1,4 +1,3 @@
-// Dữ liệu quán ăn 
 const PLACES = {
   "banh-xeo-ba-duong": {
     name: "Bánh xèo Bà Dưỡng",
@@ -81,23 +80,23 @@ const PLACES = {
     ]
   },
   "madame-lan": {
-  name: "Nhà hàng Madame Lân",
-  image: "images/madame-lan.jpg",
-  desc:
-    "Nhà hàng Madame Lân tái hiện không gian phố cổ với ẩm thực miền Trung đặc sắc. Thực đơn đa dạng từ mì Quảng, bánh bèo, nem lụi đến hải sản tươi.",
-  highlights: [
-    "Không gian rộng, mang phong cách phố cổ Hội An",
-    "Phục vụ nhiều món ăn truyền thống miền Trung",
-    "Phù hợp cho gia đình, đoàn du lịch"
-  ],
-  meta: [
-    "Địa chỉ: 4 Bạch Đằng, Hải Châu, Đà Nẵng",
-    "Giờ mở cửa: 10:00 – 22:00 mỗi ngày",
-    "Giá: trung bình – phù hợp cho nhóm đông"
-  ]
-    },
+    name: "Nhà hàng Madame Lân",
+    image: "images/madame-lan.jpg",
+    desc:
+      "Nhà hàng Madame Lân tái hiện không gian phố cổ với ẩm thực miền Trung đặc sắc. Thực đơn đa dạng từ mì Quảng, bánh bèo, nem lụi đến hải sản tươi.",
+    highlights: [
+      "Không gian rộng, mang phong cách phố cổ Hội An",
+      "Phục vụ nhiều món ăn truyền thống miền Trung",
+      "Phù hợp cho gia đình, đoàn du lịch"
+    ],
+    meta: [
+      "Địa chỉ: 4 Bạch Đằng, Hải Châu, Đà Nẵng",
+      "Giờ mở cửa: 10:00 – 22:00 mỗi ngày",
+      "Giá: trung bình – phù hợp cho nhóm đông"
+    ]
+  },
 
-  
+
 };
 
 

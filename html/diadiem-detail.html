@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="vi">
+
 <head>
   <meta charset="UTF-8" />
   <title>Chi tiết địa điểm ăn uống - Đà Nẵng</title>
@@ -8,46 +9,38 @@
 
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script defer src="/js/diadiem.js"></script>
+  <script src="/js/load-html.js"></script>
 </head>
+
 <body>
 
-<header>
-  <h1>Chi tiết địa điểm ăn uống</h1>
-  <nav>
-    <a href="index.html">Trang chủ</a>
-    <a href="amthuc.html">Ẩm thực</a>
-    <a href="qua.html">Quà lưu niệm</a>
-    <a href="diadiem.html" class="active">Địa điểm</a>
-    <a href="contact.html">Liên hệ</a>
-  </nav>
-</header>
+  <header></header>
 
-<section class="detail">
-  <div class="detail-hero">
-    <img id="place-image" src="" alt="" />
-  </div>
-
-  <div class="detail-body">
-    <h2 id="place-name">Tên quán</h2>
-    <p id="place-desc">Mô tả quán...</p>
-
-    <div class="info">
-      <h3>Thông tin</h3>
-      <ul id="place-highlights"></ul>
+  <section class="detail">
+    <div class="detail-hero">
+      <img id="place-image" src="" alt="" />
     </div>
 
-    <div class="info">
-      <h3>Địa chỉ & thời gian mở cửa</h3>
-      <ul id="place-meta"></ul>
+    <div class="detail-body">
+      <h2 id="place-name">Tên quán</h2>
+      <p id="place-desc">Mô tả quán...</p>
+
+      <div class="info">
+        <h3>Thông tin</h3>
+        <ul id="place-highlights"></ul>
+      </div>
+
+      <div class="info">
+        <h3>Địa chỉ & thời gian mở cửa</h3>
+        <ul id="place-meta"></ul>
+      </div>
+
+      <a class="btn-back" href="diadiem.html">← Quay lại danh sách</a>
     </div>
+  </section>
 
-    <a class="btn-back" href="diadiem.html">← Quay lại danh sách</a>
-  </div>
-</section>
-
-<footer>
-  <p>&copy; 2025 Đặc sản & Du lịch Đà Nẵng</p>
-</footer>
+  <footer></footer>
 
 </body>
+
 </html>
