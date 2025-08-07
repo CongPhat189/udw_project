@@ -5,37 +5,6 @@
     font-family: Arial, sans-serif;
 }
 
-
-header {
-    background: rgba(70, 50, 20, 0.85);
-    /* Nâu trầm */
-    color: #fdf5d4;
-    /* Vàng nhạt */
-    padding: 15px 20px;
-    text-align: center;
-    position: fixed;
-    width: 100%;
-    top: 0;
-    z-index: 50;
-}
-
-header h1 {
-    margin-bottom: 8px;
-    letter-spacing: 1px;
-}
-
-header nav a {
-    color: #fdf5d4;
-    margin: 0 12px;
-    text-decoration: none;
-}
-
-header nav a.active {
-    font-weight: bold;
-    text-decoration: underline;
-}
-
-
 .hero {
     background: url('images/danang-bg.jpg') no-repeat center/cover;
     height: 100vh;
@@ -161,40 +130,4 @@ header nav a.active {
 
 .next {
     right: -6px;
-}
-
-/* Footer */
-footer {
-    background: #5c3b09;
-    /* Nâu đậm */
-    color: #fdf5d4;
-    /* Vàng nhạt */
-    text-align: center;
-    padding: 16px 0;
-}
-
-
-@media (max-width: 768px) {
-    .intro-box {
-        margin: 0 16px;
-        padding: 24px;
-    }
-
-    .slide img {
-        height: 280px;
-    }
-
-    .prev,
-    .next {
-        font-size: 26px;
-        padding: 8px 12px;
-    }
-
-    .prev {
-        left: 4px;
-    }
-
-    .next {
-        right: 4px;
-    }
 }
