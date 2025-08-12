@@ -9,7 +9,7 @@ function layoutPage(selector, file) {
             .then(html => {
                 el.innerHTML = html;
 
-                // Nếu là header thì tô sáng menu đang hoạt động
+                // tô sáng menu đang hoạt động
                 if (selector === "header") {
                     highlightActiveMenu();
                 }
@@ -22,11 +22,11 @@ function layoutPage(selector, file) {
 }
 
 function highlightActiveMenu() {
-    const current = location.pathname.split("/").pop() || "index.html";
+    const current = location.pathname.split("/").pop() || "index.html"; // cắt đường dẫn lấy teeh file
     const menuItems = document.querySelectorAll("header .nav-menu a");
 
     menuItems.forEach(a => {
-        const href = a.getAttribute("href").replace("./", "");
+        const href = a.getAttribute("href").replace("./", ""); // so sanh nếu đúng là  curr file thì file đo dang active
         if (href === current) {
             a.classList.add("active");
         }

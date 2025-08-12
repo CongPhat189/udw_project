@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     document.querySelector(".next").addEventListener("click", function () {
-        currentIndex = (currentIndex + 1) % totalSlides;
+        currentIndex = (currentIndex + 1) % totalSlides; // tăng lên 1 là chuyển ảnh qua, % total = 0  là do nêu ở cuối thì về đầu
         updateCarousel();
     });
 
