@@ -1,4 +1,4 @@
-/* ===== CSS riêng cho trang Quà lưu niệm ===== */
+
 
 /* Tiêu đề trang */
 .page-header {
@@ -116,8 +116,4 @@
   filter: brightness(0.95);
 }
 
-/* Responsive */
-@media (max-width: 768px) {
-  .detail-hero img { height: 260px; }
-  .card img { height: 150px; }
-}
+
