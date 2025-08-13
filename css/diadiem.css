@@ -10,36 +10,7 @@
   margin-bottom: 6px;
 }
 
-/* Video YouTube */
-.video-section {
-  padding: 0 20px 20px;
-  display: flex;
-  justify-content: center;
-}
-.video-container {
-  max-width: 900px;
-  width: 100%;
-  border-radius: 12px;
-  overflow: hidden;
-  box-shadow: 0 6px 16px rgba(0,0,0,0.12);
-  background: #fff8df;
-  padding: 10px;
-}
-.video-wrapper {
-  position: relative;
-  width: 100%;
-  padding-bottom: 56.25%; /* 16:9 */
-  height: 0;
-  overflow: hidden;
-  border-radius: 8px;
-}
-.video-wrapper iframe {
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  border: 0;
-}
+
 
 /* Lưới danh sách quán */
 .grid {
